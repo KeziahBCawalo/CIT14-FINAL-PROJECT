@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet"></head>
+<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Pacifico&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@500&display=swap" rel="stylesheet">
+<title>Owlie Goodies</title>
+<style>
+*{
+	margin: 0;
+	padding:0;
+}
+
+
+body{
+	height: 100vh;
+	width: 100%;
+	background-image: url(background.png);
+	background-size: cover;
+	background-position: center;
+	padding-left: 5%;
+	padding-right: 5%;
+	box-sizing: border-box;
+	position: relative;
+	background-repeat: no-repeat;
+}
+
+.main-nav{
+	list-style: none;
+	margin-right: 30px;
+	width: 100%;
+	height: 15vh;
+	margin: auto;
+	display: flex;
+	align-items: center;
+
+}
+
+.nav{
+	flex: 1;
+	padding-left: 60px;
+}
+.main-nav li{
+	display: inline-block;
+}
+
+.main-nav li a{
+	color:#FFA07A;
+	text-decoration: none;
+	padding: 10px 30px;
+	font-family: serif;
+	font-size: 20px;
+	display: inline-block;
+	list-style: none;
+	margin: 30px 20px;
+}
+
+.main-nav li.active a{
+color: #FC507C;
+}
+
+.main-nav li a:hover{
+color: #FC507C;
+}
+.main-nav li.active a{
+border: 2px solid white;
+}
+
+.main-nav li a:hover{
+border: 2px solid white;
+}
+
+.logo{
+
+	max-width: 15%;
+	cursor: pointer;
+}
+
+
+
+
+
+.content h1{
+	font-size: 80px;
+	margin-bottom: 25px;
+	margin-left: 50px;
+	color: brown;
+	font-family: 'Lobster', cursive;
+}
+
+.content p{
+	font-size: 30px;
+	font-weight: 100;
+	margin-top: 24px;
+	margin-bottom: 15px;
+	margin-left: 50px;
+	color: #232d60;
+	font-family: 'Anton', sans-serif;
+}
+
+.content{
+	margin-top: 5%;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+.content .btn{
+	display: inline-block;
+	margin-left: 50px;
+	background: linear-gradient(45deg, #87adfe, #ff77cd);
+	border-radius: 6px;
+	padding: 10px 20px;
+	box-sizing: border-box;
+	text-decoration: none;
+	color: #fff;
+	box-shadow: 3px 8px 22px rgba(94,28,68,0.15)
+}
+.feature-img{
+	height: 100%;
+	position: absolute;
+	bottom: 20px;
+	margin-left: 830px;
+}
+
+.social-links{
+ transform: rotate(-90deg);
+ position: absolute;
+ left: -80px;
+ bottom: 180px;
+ 
+}
+
+.social-links a{
+	text-decoration: none;
+	color:black;
+	padding-right: 20px;
+	font-size: 14px;
+}
+
+.social-links a:hover{
+color: #FC507C;
+}
+
+
+
+/*feature*/
+.row{
+	display: flex;
+	margin: 100px;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.small-categories{
+	max-width: 1080px;
+	margin:auto;
+	padding-left: 25px;
+	padding: 20px;
+}
+.col-3{
+	flex-basis: 30%;
+	padding:12px;
+	min-width: 100px;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	box-shadow: 0 0 20px 0px rgba(0,0,0,0.1);
+	cursor: pointer;
+	transition: transform 0.5s;
+}
+
+.col-3 img{
+width: 100%;
+box-radius: 50px;
+}
+
+.col-3:hover{
+transform: translateY(-10px);
+}
+
+.title{
+	text-align: center;
+	margin:0 auto 10px;
+	position: relative;
+	line-height: 60px;
+	color: #555;
+	text-align: center;
+	font-family: 'Fredoka One', cursive;
+	font-size: 30px;
+
+	color: black;
+}
+
+.title::after{
+	content: '';
+	background: #ff523b;
+	width: 80px;
+	height: 5px;
+	border-radius: 5px;
+	position: absolute;
+	bottom: 0;
+	left: 45%;
+}
+
+hr { 
+  display: block;
+  margin-top: 7em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 2px;
+} 
+
+
+
+h5{
+font-family: 'Heebo', sans-serif;
+	font-size: 20px;
+	text-align: center;
+			
+}
+
+
+/*footer*/
+.categories{
+	margin: 70px 0;
+}
+.row1{
+	display: flex;
+	margin: 20px 0 20px;
+	margin-bottom: 20px;
+	justify-content: space-around;
+}
+
+.footer{
+	background: #B3FADE;
+	color: #black;
+	font-size: 15px;
+	padding: 10px;
+}
+
+.footer-col2 img{
+	width:200px;
+	margin-bottom: 20px;
+	margin-left: 20px;
+}
+
+h4{
+	font-family: 'Fredoka One', cursive;
+	font-size: 20px;
+}
+
+
+.footer-col3 a {
+	text-decoration: none;
+	color:black;
+	font-size: 15px;
+	padding: 3px;
+	line-height: 0.5;
+}
+
+
+
+.footer-col3 a:hover{
+color: #FC507C;
+}
+.footer-col2 p{
+	text-align: center;
+}
+.footer-col3 ul{
+	list-style-type: none;
+}
+
+.footer-col1 a {
+	text-decoration: none;
+	color:black;
+	font-size: 50px;
+	padding: 3px;
+	line-height: 0.5;
+		font-family: 'Lobster', cursive;
+}
+
+.footer-col1 ul{
+	list-style-type: none;
+}
+
+h3{
+	color: brown;
+	font-family: 'Lobster', cursive;
+	font-size: 50px;
+}
+</style>
+
+
+<body>
+<header class="header">
+		<div class="main-nav">
+			<img src="owl.png" class="logo">
+			
+			<img src="paleo-christmas-cookies-chocolate-crinkles-gluten-free-dairy-free-9-scaled.jpg" 
+				class="feature-img" width="450" height="1000">
+
+			<nav>
+				<ul>
+					<li class="active"><a href="website.html">Home</a></li>
+					<li><a href="About.html">About</a></li>
+					<li><a href="Products.html">Products</a></li>
+
+				</ul>
+			</nav>
+
+		</div>
+</header>
+	
+	<div class="content">	
+		<h1>Satisfy<br>Your<br>Cravings!</h1>
+		<p>Order Now!</p>
+		<a href="login.html"class="btn">Login</a>
+		
+	</div>
+	<div class="social-links">
+		<a href="">FACEBOOK</a>
+		<a href="">INSTAGRAM</a>
+		<a href="">TWITTER</a>
+	</div>
+	
+	<hr>
+	
+<!----feature---->
+	<div class="categories">
+			<div class="small-categories">
+			<h2 class="title">Featured Products</h2>
+			<div class= "row">
+		
+			<div class="col-3">
+				<img src="warm-chocolate-chip-cookies.jpg" >
+				<h5>Chocolate chip cookies</h5>
+			</div>
+			<div class="col-3">
+				<img src="chocolate-crinkles-3.jpg">
+				<h5>Crinkles<br></h5>
+
+			</div>
+			<div class="col-3">
+				<img src="Best-Moist-Chocolate-Cake4.jpg">
+				<h5>Moist chocolate cake</h5>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+<!----footer---->
+	<div class= "footer">
+		<div class="container">
+			<div class="row1">
+				<div class="footer-col2">
+					<img src="owl.png">
+					<p>Satisfy your cravings!</p>
+				</div>
+				
+				<div class="footer-col1">
+					<h3>Affordable</h3>
+					<ul>
+						<li><a href="">and</li>
+						<li><a href="">Delicous</li>
+					</ul>
+				</div>
+				
+
+				<div class="footer-col3">
+					<h4>Follow us</h4>
+					<ul>
+						<li><a href="Promos.html">FACEBOOK</li>
+						<li><a href="Promos.html">TWITTER</li>
+						<li><a href="Promos.html">INSTAGRAM</li>
+					</ul>
+				</div>
+				
+				<div class="footer-col3">
+					<h4>Contact us:</h4>
+					<ul>
+						<li><a href="Promos.html">09057274139</li>
+						<li><a href="Promos.html">OwlieGoodies@gmail.com</li>
+
+					</ul>
+				</div>
+								<div class="footer-col3">
+					<h4>Other Services:</h4>
+					<ul>
+						<li><a href="Promos.html">Customized cakes</li>
+
+					</ul>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	
+			
+
+		
+
+
+
+
+</body>
+</html>
